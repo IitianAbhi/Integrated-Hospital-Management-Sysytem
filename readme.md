@@ -1,4 +1,11 @@
+
 # Hospital Management System - Mini Project
+
+## Disclaimer
+-   this is not the working repository if you want to check our working repo checkout to: https://github.com/rudrakpatra/DBMS_MiniProject <br>
+it was fun working together :)
+
+## About
 This is a web application developed as a mini project for the course Web Application Development. It is a simple hospital management system that enables patients to book appointments with doctors, view their medical records, and also pay their medical bills.
 
 ## Technologies Used
@@ -26,15 +33,45 @@ This is a web application developed as a mini project for the course Web Applica
 - doctor gets emailed about the condition of all his/her patients (the entire patient info) every week
 - doctor gets emergency email if patient health turns out to be critical
 
-## Installation
+## Installation And Setup
 
-1. Clone the repository using the following command:
+1. Clone the repository using the following command
+2. Install Nodejs and React
+3. run npm i command on both client and backend to install all the dependancies
+4. run client(frontend) and backend and enjoy!
 
+-   install dependencies
+```
+npm i
+```
+-   run client
+```
+npm run dev
+```
+-   run backend
+```
+npm start dev
+```
+
+## Modules
+
+### backend:
+-   make a connection to the sql database and collect data from the database(Mysql)
+-   run on a port so that client can request data from the backend through this port
+
+### client:
+-   frontend code for our PARAS hospital which fetches the required data from the backend
+
+### Database:
+-   Shown our ER-Model Implementation in sql, populate tables and also for deleting.
+-   some of the queries are given but it will be recommended to look into the backend(index.js).
 
 ## Contributors
 
 -   [Akash Das](https://github.com/Akash-Das2024)
+-   [Rudrak Patra](https://github.com/rudrakpatra)
 -   [Atishay Jain](https://github.com/ati-jain)
 -   [Prakhar Singh]()
--   [Rudrak Patra](https://github.com/rudrakpatra)
 -   [Saras Pantulwar](https://github.com/pantulwars)
+
+
