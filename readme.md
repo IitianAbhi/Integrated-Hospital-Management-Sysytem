@@ -2,7 +2,7 @@
 # Hospital Management System - Mini Project
 
 ## Disclaimer
--   this is not the working repository if you want to check our working repo checkout to: https://github.com/rudrakpatra/DBMS_MiniProject <br>
+-   this was not the repository we used while working on this project if you want to check our working repo checkout to: https://github.com/rudrakpatra/DBMS_MiniProject <br>
 it was fun working together :)
 
 ## About
