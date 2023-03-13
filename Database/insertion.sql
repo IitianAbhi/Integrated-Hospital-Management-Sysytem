@@ -6,28 +6,28 @@ USE Hospital;
 
 
 INSERT INTO User
-    (Username, Password, Type, Name)
+    (Username, Password, Type, Name, Email)
 VALUES
-    ('doc1', 'pass', 'doctor', 'John Doe', 'das815221@gmail.com'),
-    ('doc2', 'pass', 'doctor', 'Jane Smith', 'das815221@gmail.com'),
-    ('dataentry1', 'pass', 'dataentry', 'Emily Johnson', 'das815221@gmail.com'),
-    ('dataentry2', 'pass', 'dataentry', 'Michael Lee', 'das815221@gmail.com'),
-    ('admin1', 'pass', 'admin', 'David Brown', 'das815221@gmail.com'),
-    ('admin2', 'pass', 'admin', 'Amanda Wilson', 'das815221@gmail.com'),
-    ('frontdesk1', 'pass', 'frontdesk', 'Sarah Taylor', 'das815221@gmail.com'),
-    ('frontdesk2', 'pass', 'frontdesk', 'Kevin Martinez', 'das815221@gmail.com'),
-    ('doc3', 'pass', 'doctor', 'William Davis', 'das815221@gmail.com'),
-    ('doc4', 'pass', 'doctor', 'Olivia Hernandez', 'das815221@gmail.com'),
-    ('dataentry3', 'pass', 'dataentry', 'Ethan Garcia', 'das815221@gmail.com'),
-    ('dataentry4', 'pass', 'dataentry', 'Sophia Martinez', 'das815221@gmail.com'),
-    ('admin3', 'pass', 'admin', 'Aiden Jackson', 'das815221@gmail.com'),
-    ('admin4', 'pass', 'admin', 'Madison Miller', 'das815221@gmail.com'),
-    ('frontdesk3', 'pass', 'frontdesk', 'Daniel Moore', 'das815221@gmail.com'),
-    ('frontdesk4', 'pass', 'frontdesk', 'Avery Davis', 'das815221@gmail.com'),
-    ('doc5', 'pass', 'doctor', 'Chloe Green', 'das815221@gmail.com'),
-    ('doc6', 'pass', 'doctor', 'Alexander Scott', 'das815221@gmail.com'),
-    ('dataentry5', 'pass', 'dataentry', 'Natalie Carter', 'das815221@gmail.com'),
-    ('dataentry6', 'pass', 'dataentry', 'Noah Young', 'das815221@gmail.com');
+    ('doc1', 'pass', 'doctor', 'John Doe', 'juststartedxd150@gmail.com'),
+    ('doc2', 'pass', 'doctor', 'Jane Smith', 'juststartedxd150@gmail.com'),
+    ('dataentry1', 'pass', 'dataentry', 'Emily Johnson', 'juststartedxd150@gmail.com'),
+    ('dataentry2', 'pass', 'dataentry', 'Michael Lee', 'juststartedxd150@gmail.com'),
+    ('admin1', 'pass', 'admin', 'David Brown', 'juststartedxd150@gmail.com'),
+    ('admin2', 'pass', 'admin', 'Amanda Wilson', 'juststartedxd150@gmail.com'),
+    ('frontdesk1', 'pass', 'frontdesk', 'Sarah Taylor', 'juststartedxd150@gmail.com'),
+    ('frontdesk2', 'pass', 'frontdesk', 'Kevin Martinez', 'juststartedxd150@gmail.com'),
+    ('doc3', 'pass', 'doctor', 'William Davis', 'juststartedxd150@gmail.com'),
+    ('doc4', 'pass', 'doctor', 'Olivia Hernandez', 'juststartedxd150@gmail.com'),
+    ('dataentry3', 'pass', 'dataentry', 'Ethan Garcia', 'juststartedxd150@gmail.com'),
+    ('dataentry4', 'pass', 'dataentry', 'Sophia Martinez', 'juststartedxd150@gmail.com'),
+    ('admin3', 'pass', 'admin', 'Aiden Jackson', 'juststartedxd150@gmail.com'),
+    ('admin4', 'pass', 'admin', 'Madison Miller', 'juststartedxd150@gmail.com'),
+    ('frontdesk3', 'pass', 'frontdesk', 'Daniel Moore', 'juststartedxd150@gmail.com'),
+    ('frontdesk4', 'pass', 'frontdesk', 'Avery Davis', 'juststartedxd150@gmail.com'),
+    ('doc5', 'pass', 'doctor', 'Chloe Green', 'juststartedxd150@gmail.com'),
+    ('doc6', 'pass', 'doctor', 'Alexander Scott', 'juststartedxd150@gmail.com'),
+    ('dataentry5', 'pass', 'dataentry', 'Natalie Carter', 'juststartedxd150@gmail.com'),
+    ('dataentry6', 'pass', 'dataentry', 'Noah Young', 'juststartedxd150@gmail.com');
 
 
 INSERT INTO Room
@@ -62,18 +62,18 @@ VALUES
 
 
 INSERT INTO Test
-    (Name, Date, Result, Report)
+    (Name, Date, Result)
 VALUES
-    ('Blood Test', '2022-01-01 10:30:00', 'Positive', null),
-    ('X-Ray', '2022-01-02 14:00:00', 'Negative', NULL),
-    ('CT Scan', '2022-01-03 09:15:00', 'Positive', NULL),
-    ('MRI', '2022-01-05 11:00:00', 'Negative', NULL),
-    ('ECG', '2022-01-07 16:45:00', 'Positive', NULL),
-    ('Ultrasound', '2022-01-10 10:00:00', 'Negative', NULL),
-    ('Blood Culture', '2022-01-11 11:30:00', NULL, NULL),
-    ('Urine Culture', '2022-01-12 12:15:00', 'Positive', NULL),
-    ('Stool Test', '2022-01-15 09:30:00', 'Negative', NULL),
-    ('Sputum Test', '2022-01-18 15:00:00', 'Positive', NULL);
+    ('Blood Test', '2022-01-01 10:30:00', 'Positive'),
+    ('X-Ray', '2022-01-02 14:00:00', 'Negative'),
+    ('CT Scan', '2022-01-03 09:15:00', 'Positive'),
+    ('MRI', '2022-01-05 11:00:00', 'Negative'),
+    ('ECG', '2022-01-07 16:45:00', 'Positive'),
+    ('Ultrasound', '2022-01-10 10:00:00', 'Negative'),
+    ('Blood Culture', '2022-01-11 11:30:00', NULL),
+    ('Urine Culture', '2022-01-12 12:15:00', NULL),
+    ('Stool Test', NULL, NULL),
+    ('Sputum Test', NULL, NULL);
 
 INSERT INTO Treatment
     (Date, Name, Dosage)
@@ -170,25 +170,14 @@ INSERT INTO Prescription_Test
     (ID, Test, Important)
 VALUES
     (1001, 1, 1),
-    (1002, 3, 0),
-    (1003, 7, 0),
+    (1002, 2, 0),
+    (1003, 3, 0),
     (1004, 5, 1),
-    (1005, 2, 0),
-    (1006, 9, 0),
-    (1007, 4, 1),
-    (1008, 8, 0),
-    (1009, 6, 0),
-    (1010, 10, 1),
-    (1011, 1, 0),
-    (1012, 3, 1),
-    (1013, 7, 0),
-    (1014, 5, 0),
-    (1015, 2, 1),
-    (1016, 9, 0),
-    (1017, 4, 1),
-    (1018, 8, 0),
-    (1019, 6, 1),
-    (1000, 10, 0);
+    (1005, 6, 0),
+    (1006, 7, 1),
+    (1007, 8, 1),
+    (1008, 9, 0),
+    (1009, 10, 0);
 
 
 INSERT INTO Prescription_Treatment
@@ -203,28 +192,18 @@ VALUES
     (1004, 3),
     (1005, 7),
     (1006, 5),
-    (1007, 10),
-    (1008, 2),
-    (1009, 6),
-    (1010, 4),
-    (1011, 8),
-    (1012, 1),
-    (1013, 9),
-    (1014, 3),
-    (1015, 7),
-    (1016, 5),
-    (1017, 10);
+    (1007, 10);
 
 
 INSERT INTO Appointment
     (ID, Prescription, Priority, Patient, Doctor, Date)
 VALUES
-    (1, NULL, 8, 101, 'doc1', '2023-04-10'),
-    (2, NULL, 4, 102, 'doc2', '2023-05-01'),
-    (3, NULL, 2, 103, 'doc1', '2023-06-15'),
+    (1, NULL, 8, 101, 'doc1', '2023-01-10'),
+    (2, NULL, 4, 102, 'doc2', '2023-02-01'),
+    (3, NULL, 2, 103, 'doc1', '2023-04-15'),
     (4, NULL, 6, 104, 'doc2', '2023-04-20'),
-    (5, NULL, 10, 105, 'doc1', '2023-05-05'),
-    (6, NULL, 3, 106, 'doc2', '2023-06-10'),
+    (5, NULL, 10, 105, 'doc1', '2023-04-05'),
+    (6, NULL, 3, 106, 'doc2', '2023-03-10'),
     (7, NULL, 9, 107, 'doc1', '2023-04-12'),
     (8, NULL, 1, 108, 'doc2', '2023-05-17'),
     (9, NULL, 7, 109, 'doc1', '2023-06-25'),
@@ -252,8 +231,7 @@ VALUES
     (31, NULL, 3, 131, 'doc1', '2023-04-16');
 
 INSERT INTO Appointment
-    (`ID`, `Prescription
-`, `Priority`, `Patient`, `Doctor`, `Date`) VALUES
+    (`ID`, `Prescription`, `Priority`, `Patient`, `Doctor`, `Date`) VALUES
 (51, 1001, 3, 101, 'doc1', '2022-12-15'),
 (52, 1002, 2, 104, 'doc1', '2022-12-10'),
 (53, 1003, 6, 105, 'doc2', '2022-11-22'),

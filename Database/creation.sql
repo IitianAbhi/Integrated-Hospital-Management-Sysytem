@@ -6,6 +6,7 @@ create table User (
     `Type` varchar(16) not null,
     `Name` varchar(256) not null,
     `Email` varchar(256),
+    `Active` boolean default true not null,
     CHECK (`Type` IN ('frontdesk','admin','dataentry', 'doctor'))
 );
 
@@ -18,7 +19,7 @@ create table Room (
 create table Test (
     `ID` int primary key auto_increment,
     `Name` text not null,
-    `Date` datetime not null,
+    `Date` datetime,
     `Result` text,
     `Report` MEDIUMBLOB,
     `Image` MEDIUMBLOB
@@ -48,7 +49,7 @@ create table Prescription_Treatment (
     `Treatment` int,
     foreign key (`Treatment`) REFERENCES `Treatment`(`ID`),
     foreign key (`ID`) REFERENCES `Prescription` (`ID`),
-    primary key (`ID`, `Treatment`)
+    primary key (`Treatment`)
 );
 
 create table Prescription_Test (
@@ -57,7 +58,7 @@ create table Prescription_Test (
     `Important` boolean default false not null,
     foreign key (`Test`) REFERENCES `Test`(`ID`),
     foreign key (`ID`) REFERENCES `Prescription`(`ID`),
-    primary key (`ID`, `Test`)
+    primary key (`Test`)
 );
 
 create table Admission (
@@ -85,11 +86,13 @@ create table Appointment (
 create table Patient_Appointment (
     `ID` int,
     `Appointment` int,
-    foreign key (`Appointment`) REFERENCES `Appointment`(`ID`)
+    foreign key (`Appointment`) REFERENCES `Appointment`(`ID`),
+    primary key (`Appointment`)
 );
 
 create table Patient_Admission (
     `ID` int,
     `Admission` int,
-    foreign key (`Admission`) REFERENCES `Admission`(`ID`)
+    foreign key (`Admission`) REFERENCES `Admission`(`ID`),
+    primary key (`Admission`)
 );
