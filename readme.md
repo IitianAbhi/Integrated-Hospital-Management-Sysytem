@@ -4,7 +4,6 @@
 ## Disclaimer
 -   this was not the repository we used while working on this project if you want to check our working repo checkout to: https://github.com/rudrakpatra/DBMS_MiniProject <br>
 -   WEBSITE: https://paras.onrender.com <br>
-it was fun working together :)
 
 ## About
 This is a web application developed as a mini project for the course Web Application Development. It is a simple hospital management system that enables patients to book appointments with doctors, view their medical records, and also pay their medical bills.
