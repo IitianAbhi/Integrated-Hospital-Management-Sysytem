@@ -4,9 +4,8 @@
         "start": "npm run start-client & npm run start-server",
         "start-client": "cd client && npm run dev",
         "start-server": "cd backend && npm run start",
-        "build": "npm run build-client && npm run build-server",
-        "build-client": "cd client && npm run build",
-        "build-server": "cd backend && npm run build"
+        "build": "npm run build-client",
+        "build-client": "cd client && npm run build"
     },
     "dependencies": {
     "base-64": "^1.0.0",
