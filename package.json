@@ -1,9 +1,9 @@
 {
     "name": "paras-hospital",
     "scripts": {
-        "start": "npm run start-client & npm run start-server",
-        "start-client": "cd client && npm run dev",
+        "start": "npm run start-server & npm run start-client",
         "start-server": "cd backend && npm run start",
+        "start-client": "cd client && npm run dev",
         "build": "npm run build-client",
         "build-client": "cd client && npm run build"
     },
