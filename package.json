@@ -5,7 +5,7 @@
         "start-client": "cd client && npm run dev",
         "start-server": "cd backend && npm run start",
         "build": "npm run build-client && npm run build-server",
-        "build-client": "cd client && npm run build",
-        "build-server": "cd server && npm run test"
+        "build-client": "cd client && npm i",
+        "build-server": "cd server && npm i"
     }
 }
