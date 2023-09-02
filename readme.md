@@ -67,7 +67,7 @@ npm start dev
 -   some of the queries are given but it will be recommended to look into the backend(index.js).
 
 ## Contributors
-
+-   [Abhisek Sharma]()
 -   [Akash Das](https://github.com/Akash-Das2024)
 -   [Rudrak Patra](https://github.com/rudrakpatra)
 -   [Atishay Jain](https://github.com/ati-jain)
